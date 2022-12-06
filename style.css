@@ -61,4 +61,26 @@ nav .wrapper {
   width: 180px;
   line-height: 45px;
   background-color: #242526;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: all 0.5s ease-in-out; */
 }
+.nav_links li:hover .drop_menu {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+
+.drop_menu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
+
+
+/* mega menu */
+
