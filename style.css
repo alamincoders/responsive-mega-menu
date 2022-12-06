@@ -44,7 +44,7 @@ nav .wrapper {
   font-weight: 500;
   border-radius: 5px;
   padding: 9px 15px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .nav_links li {
@@ -66,7 +66,7 @@ nav .wrapper {
   background-color: #242526;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .nav_links li:hover .drop_menu,
 .nav_links li:hover .mega_box {
@@ -95,7 +95,7 @@ nav .wrapper {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .mega_box .content {
@@ -139,5 +139,10 @@ nav .wrapper {
   padding: 0 20px;
   color: #d9d9d9;
   font-size: 17px;
+  line-height: 45px;
   display: block;
 }
+
+/**********************************
+          Responsive Styles             
+*********************************** */
