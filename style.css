@@ -190,6 +190,9 @@ nav .wrapper {
   #menu_btn:checked ~ .nav_links {
     left: 0%;
   }
+  #menu_btn:checked ~ .btn.menu_btn {
+    display: none;
+  }
   .nav_links::-webkit-scrollbar {
     width: 0px;
   }
