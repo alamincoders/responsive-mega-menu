@@ -1,4 +1,4 @@
-# Responsive Dropdown & Mega Menu
+## Fully Responsive Dropdown & Mega Menu
 
 ## Demo
 
