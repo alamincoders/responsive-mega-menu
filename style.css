@@ -149,11 +149,28 @@ nav .wrapper {
   display: block;
 }
 
+/* buttons style */
+
+.wrapper .btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.cancel_btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
 /**********************************
           Responsive Styles             
 *********************************** */
 
 @media screen and (max-width: 970px) {
+  .wrapper .btn {
+    display: block;
+  }
   .wrapper .nav_links {
     position: fixed;
     height: 100vh;
@@ -162,11 +179,18 @@ nav .wrapper {
     background: #242526;
     display: block;
     top: 0;
-    left: 0;
+    left: -100%;
     overflow-y: auto;
     line-height: 50px;
     padding: 50px 10px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+  }
+  #menu_btn:checked ~ .nav_links {
+    left: 0%;
+  }
+  .nav_links::-webkit-scrollbar {
+    width: 0px;
   }
   .nav_links li {
     margin: 15px 10px;
