@@ -179,6 +179,7 @@ nav .wrapper {
     background: #242526;
     display: block;
     top: 0;
+    left: 0;
     left: -100%;
     overflow-y: auto;
     line-height: 50px;
@@ -249,8 +250,14 @@ nav .wrapper {
     width: 100%;
     padding: 0 20px;
     opacity: 1;
+    max-height: 0px;
     visibility: visible;
+    overflow: hidden;
     transition: all 0.3s ease;
+  }
+
+  #showMega:checked ~ .mega_box {
+    max-height: 100%;
   }
 
   .mega_box .content {
